@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+  width: 100%;
+  height: 100vh;
+  padding: 10px;
+  background: linear-gradient(to bottom, #68EACC 0%, #497BE8 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  background: #fff;
+  max-width: 400px;
+  width: 30rem;
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper header {
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.wrapper .inputField {
+  margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+  height: 45px;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.inputField input {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  font-size: 17px;
+  padding-left: 15px;
+  transition: all 0.3s ease;
+ 
+}
+
+.add-btn {
+ padding: 10px 20px;
+ border: none;
+ border-radius:5px ;
+ cursor: pointer;
+ transition: background-color 0.5s ease;
+ background-color: hsl(125, 47%, 54%);
+}
+
+.add-btn:hover {
+   background-color: hsl(125, 47%, 44%);
+}
+
+svg {
+  height: 1rem;
+}
+
+.wrapper .todoList {
+  max-height: 250px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+
+.todoList li {
+  position: relative;
+  list-style: none;
+  height: 45px;
+  line-height: 45px;
+  margin-bottom: 8px;
+  background: #f2f2f2;
+  border-radius: 3px;
+  padding: 0 15px;
+  cursor: default;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todoList li .task {
+  flex-grow: 1;
+}
+
+.wrapper .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer span {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.footer .pendingTasks {
+  font-weight: 700;
+  color: #c0392b;
+}
+
+.footer button {
+  background: #e74c3c;
+  padding: 10px 20px;
+  border: none;
+  border-radius:5px ;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+
+.footer button:hover {
+  background: #c0392b;
+}
+
+.error {
+  color: red;
+}
+
+.completed .task {
+  text-decoration: line-through;
+}
+
+li input {
+  margin-right: 1rem;
+}
+
+
